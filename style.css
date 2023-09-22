@@ -29,17 +29,22 @@ body {
 
 #banner {
   position: relative;
-  background-image: url('./pexels-fox-1595388.jpg');
+  /* background-image: url('./image/pexels-fox-1595388.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100vh; */
 }
 
 .navbar-large {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100px;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 1)
@@ -84,8 +89,7 @@ body {
   text-align: right;
 }
 
-.description {
-  /* margin-top: 100px; */
+/* .description {
   padding-top: 100px;
   margin-left: 30px;
   width: 50%;
@@ -98,7 +102,17 @@ body {
 
 .description p {
   font-size: 20px;
+} */
+
+.carousel-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
+
 
 .explore-button {
   width: 160px;
@@ -175,7 +189,8 @@ body {
 
 .course-img {
   width: 274px;
-  height: 366px object-fit: contain;
+  height: 366px;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -219,7 +234,7 @@ body {
   margin: 10px auto 30px auto;
 }
 
-.course_btn a{
+.course_btn a {
   color: white;
   text-decoration: none;
 }
@@ -246,7 +261,6 @@ body {
 }
 
 /* If the screen size is 1270px or more*/
-
 @media only screen and (min-width: 1270px) {
   #navbar-small {
     display: none;
@@ -254,24 +268,7 @@ body {
 }
 
 /* When the width is between 576px and 992px*/
-@media screen and (max-width: 992px) and (min-width: 576px) {
-  .description {
-    /* margin-top: 100px; */
-    padding-top: 100px;
-    margin-left: 30px;
-    width: 70%;
-    color: #d2d2d2;
-  }
-
-  .description h1 {
-    font-size: 50px;
-  }
-
-  .description p {
-    font-size: 16px;
-  }
-
-}
+@media screen and (max-width: 992px) and (min-width: 576px) {}
 
 /* If the screen size is 576px or less*/
 @media only screen and (max-width: 576px) {
