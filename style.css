@@ -29,10 +29,6 @@ body {
 
 #banner {
   position: relative;
-  /* background-image: url('./image/pexels-fox-1595388.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh; */
 }
 
 .navbar-large {
@@ -89,21 +85,6 @@ body {
   text-align: right;
 }
 
-/* .description {
-  padding-top: 100px;
-  margin-left: 30px;
-  width: 50%;
-  color: #d2d2d2;
-}
-
-.description h1 {
-  font-size: 60px;
-}
-
-.description p {
-  font-size: 20px;
-} */
-
 .carousel-desc {
   position: absolute;
   top: 50%;
@@ -149,7 +130,7 @@ body {
 }
 
 .update img {
-  width: 300px;
+  width: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
@@ -265,6 +246,9 @@ body {
   #navbar-small {
     display: none;
   }
+  .update{
+    flex-grow: 1;
+  }
 }
 
 /* When the width is between 576px and 992px*/
@@ -272,21 +256,6 @@ body {
 
 /* If the screen size is 576px or less*/
 @media only screen and (max-width: 576px) {
-  .description {
-    /* margin-top: 100px; */
-    padding-top: 100px;
-    margin-left: 20px;
-    width: 100%;
-    color: #d2d2d2;
-  }
-
-  .description h1 {
-    font-size: 36px;
-  }
-
-  .description p {
-    font-size: 14px;
-  }
 
   #courses h1 {
     text-align: center;
@@ -296,5 +265,8 @@ body {
   #updates h1 {
     text-align: center;
     font-size: 24px;
+  }
+  .update{
+    flex-shrink: 1;
   }
 }

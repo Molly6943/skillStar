@@ -104,6 +104,12 @@
   padding: 20px 0px;
 }
 
+#call-us{
+  position:fixed;
+  right: 30px;
+  bottom: 30px;
+}
+
 @media only screen and (max-width: 480px) {
   body {
     background-color: lightblue;
